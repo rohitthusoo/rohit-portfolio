@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit | Portfolio</title>
+    <meta name="description" content="Personal portfolio of Rohit. Software developer and creator building modern web experiences.">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="blob-bg"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">R<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Let's Talk</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content" data-animate="fade-up">
+                <div class="greeting">
+                    <span class="dot"></span>
+                    <p>Available for work</p>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Rohit</span>.<br>
+                    I build the <span class="gradient-text">future</span> of the web.
+                </h1>
+                <p class="hero-subtitle">
+                    Crafting premium, high-performance digital experiences with cutting-edge technologies. Let's turn your vision into reality.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work <i data-lucide="arrow-right"></i></a>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="personal-info glass" data-animate="fade-up">
+                    <div class="info-item">
+                        <div class="icon-box"><i data-lucide="user"></i></div>
+                        <div class="info-text">
+                            <span>Name</span>
+                            <strong>Rohit</strong>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-box"><i data-lucide="calendar"></i></div>
+                        <div class="info-text">
+                            <span>Age</span>
+                            <strong>20</strong>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-box"><i data-lucide="graduation-cap"></i></div>
+                        <div class="info-text">
+                            <span>Education</span>
+                            <strong>SPPU College</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image" data-animate="fade-in">
+                <div class="image-wrapper glass">
+                    <img src="assets/profile_pic.png" alt="Rohit - Profile">
+                </div>
+            </div>
+        </section>
+
+        <section class="section projects" id="projects">
+            <div class="section-header" data-animate="fade-up">
+                <h2>Featured <span class="gradient-text">Work</span></h2>
+                <p>A selection of some recent projects.</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass" data-animate="fade-up">
+                    <div class="project-img">
+                        <img src="assets/project_mockup.png" alt="Analytics Dashboard UI">
+                    </div>
+                    <div class="project-info">
+                        <div class="tags">
+                            <span class="tag">Web App</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                        <h3>Nexus Dashboard</h3>
+                        <p>A high-performance modern analytics platform featuring real-time data streaming, dark-mode glassmorphic UI, and powerful charting capabilities.</p>
+                        <a href="#" class="btn btn-secondary">Case Study <i data-lucide="external-link"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 Content... can add more dynamically -->
+            </div>
+        </section>
+        
+        <section class="section compact skills" id="skills">
+            <div class="section-header" data-animate="fade-up">
+                <h2>Technical <span class="gradient-text">Arsenal</span></h2>
+            </div>
+            <div class="skills-container" data-animate="fade-up">
+                <div class="skill-pill glass"><i data-lucide="code"></i> HTML5 & CSS3</div>
+                <div class="skill-pill glass"><i data-lucide="file-json"></i> JavaScript (ES6+)</div>
+                <div class="skill-pill glass"><i data-lucide="database"></i> Node.js & APIs</div>
+                <!-- Extendable list -->
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <div class="contact-box glass" data-animate="zoom-in">
+                <h2>Ready to bring your ideas to life?</h2>
+                <p>I'm currently open to new opportunities and collaborations.</p>
+                <a href="mailto:hello@rohit.com" class="btn btn-primary btn-large">
+                    <i data-lucide="mail"></i> Say Hello
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Rohit. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>
